@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta charset="UTF-8">
+    <title>트윗라인</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8"/>
+</head>
+
+<body>
+<!-- 1. 헤더추가 <HEADER> -->
+<!-- 2. 메뉴추가 <NAV> -->
+<!-- 3. 트윗 리스트 추가하기<SECTION> -->
+<header>트윗라인</header>
+
+<nav>
+    <ul id="navList">
+        <li id="idHome" onclick="fnSelected()" class="selected"></li>
+        <li id="idMentions" onclick="fnSelected()"></li>
+        <li id="ifFavo" onclick="fnSelected()"></li>
+        <li id="idMsg" onclick="fnSelected()"></li>
+        <li id="idSrch" onclick="fnSelected()"></li>
+    </ul>
+</nav>
+
+<section id="home">
+	<ul class="tweets">
+        <li>
+            <div>
+                <img src="profile.png" alt="MatthewChang" class="user-image" />
+                <span class="username">MatthewChang</span>
+                <span class="message">나의 첫 트위터 앱</span>
+            </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</section>
+</body>
+</html>
