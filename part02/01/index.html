@@ -1,24 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head lang="ko">
-    <meta charset="UTF-8">
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />
+    <meta http-equiv="Content-Language" content="ko">
+    
+    <!-- 아이폰 풀스크린 메타테그 추가 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!-- 아이폰의 상태바 스타일 지정 -->
+    <meta name="apple-mobile-web-app-status-bar-style" ccontent="black">
+    
+    <!-- 1. 뷰포트 설정 -->
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    
     <title>트윗라인</title>
+    
+    <!--  2. css RESET 추가 -->
+    <link rel="stylesheet" href="html5reset161.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8"/>
+   
+    <!-- 구글 크롬에는 아래 효과가 나타남 (다른브라우저는 특히 파이어 폭스는 webkit자체가 적용이 안되는것 같음)
+     즐겨 찾기 아이콘 만들어짐. -->
+    <link rel="apple-touch-icon-precomposed" href="../../resource/images/icons1/tweetline_and.png" />
+    
+    
+    
+	
+	<script type="text/javascript" charset="utf-8">
+    	
+		function fnSelected(id){
+			
+				//모든 Nav 아이템을 삭제 합니다.
+				clearSelected();
+				
+				// 선택한 Nav아이템의 클래스를 selected로 바꿉니다.
+				document.getElementById(id).setAttribute('class', 'selected');
+			
+			}
+		
+		function clearSelected(){
+			
+			var navList = document.getElementById('navList');
+			
+			for(var i = 0; i < navList.children.length; i++) {
+				
+				var li = navList.children[i];
+				li.setAttribute('class', '');
+				}
+			}
+			
+    </script>
 </head>
 
 <body>
 <!-- 1. 헤더추가 <HEADER> -->
 <!-- 2. 메뉴추가 <NAV> -->
 <!-- 3. 트윗 리스트 추가하기<SECTION> -->
-<header>트윗라인</header>
+<header>
+	트윗라인
+</header>
 
 <nav>
     <ul id="navList">
-        <li id="idHome" onclick="fnSelected()" class="selected"></li>
-        <li id="idMentions" onclick="fnSelected()"></li>
-        <li id="ifFavo" onclick="fnSelected()"></li>
-        <li id="idMsg" onclick="fnSelected()"></li>
-        <li id="idSrch" onclick="fnSelected()"></li>
+        <li id="idHome" onclick="fnSelected(this.id)" class="selected"></li>
+        <li id="idMentions" onclick="fnSelected(this.id)"></li>
+        <li id="idFavo" onclick="fnSelected(this.id)"></li>
+        <li id="idMsg" onclick="fnSelected(this.id)"></li>
+        <li id="idSrch" onclick="fnSelected(this.id)"></li>
     </ul>
 </nav>
 
@@ -26,9 +74,9 @@
 	<ul class="tweets">
         <li>
             <div>
-                <img src="profile.png" alt="MatthewChang" class="user-image" />
-                <span class="username">MatthewChang</span>
-                <span class="message">나의 첫 트위터 앱</span>
+                <img src="profile.png" alt="MasterOfDream" class="user-image" />
+                <span class="username">SONG NA RE ! </span><br/>
+                <span class="message"> MY FIRST APP!</span>
             </div>
         </li>
         <li></li>
@@ -44,3 +92,9 @@
 </section>
 </body>
 </html>
+<script>
+/* 안드로이드 기기 풀스크린 효과 내기 */
+if(navigator.userAgent.match(/Android/i)){
+    window.scrollTo(0,1);
+ }
+</script>
