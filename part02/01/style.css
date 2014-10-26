@@ -7,22 +7,47 @@ body {
 	
 /* 	헤더<HEADER> */
 header {
-	width: 100%;
-	height: 44px;
+		width: 100%;
+		height: 44px;
 	
-	text-align: center;
-	padding-top: 10px;
+		/* 1. 그라데이션  */
+		background-image: -webkit-gradient(
+			linear,
+			0% 0%,
+			0% 100%,
+			from(#43a1cc),
+			to(#43a1cc),
+			color-stop(.5,#296e8e)
+		);
+		color: #fff; /*글자 색상 흰색으로 */
+		
+		text-align: center;
+		padding-top: 10px;
+		
+		/* 	CSS3 리사이징 */
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		
+		font-weight: bold;
+		font-size: 1.5em;
+}/* END-header */
 	
-	font-weight: bold;
-	font-size: 1.5em;	
-	}
 	
-/*  메뉴<NAV> */
+/*  메뉴<NAV>  */
 nav {
 	height: 44px;
 	width: 100%;
-	}
-	
+
+	/*  2. 그라데이션 추가  */
+	background-image: -webkit-gradient(
+		linear,
+		0% 0%,
+		0% 100%,
+		from(#43a1cc),
+		to(#43a1cc),
+		color-stop(.5,#a6dffa)
+	);
+}
 nav ul {
 	height: 100%;
 	width: 320px;
@@ -35,15 +60,112 @@ nav ul li {
 	float: left;
 	width: 64px;
 	height: 100%;
-	border: 1px solid #999999;
+	border: 1px solid #307d9e;
+
+/* CSS3 리사이징 */
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
 	
 	background-repeat: no-repeat;
 	background-position: center center;
 	}
 
+#idHome{
+	background-image: url('../../resource/images/icons1/53-house.png');
+	}
+#idHome.selected {
 
+	/*  3. 그라데이션 추가  */
+	background-image: url('../../resource/images/icons1/53-house.png'), 
+	-webkit-gradient(
+		linear,
+		0% 0%,
+		0% 100%,
+		from(#76aec8),
+		to(#76aec8),
+		color-stop(.5,#ffffff)
+	);
+}
+#idMentions{
+	background-image: url('../../resource/images/icons1/09-chat2.png');
+	}
+#idMentions.selected {
+	
+	/*  4. 그라데이션 추가  */
+	background-image: url('../../resource/images/icons1/09-chat2.png'), 
+	-webkit-gradient(
+		linear,
+		0% 0%,
+		0% 100%,
+		from(#76aec8),
+		to(#76aec8),
+		color-stop(.5,#ffffff)
+		);
+	}
+#idFavo{
+	background-image: url('../../resource/images/icons1/28-star.png');
+	}
+#idFavo.selected {
+	/*  5. 그라데이션 추가  */	
+	background-image: url('../../resource/images/icons1/28-star.png'),
+	-webkit-gradient(
+		linear,
+		0% 0%,
+		0% 100%,
+		from(#76aec8),
+		to(#76aec8),
+		color-stop(.5,#ffffff)
+		);
+	}
+
+#idMsg{
+	background-image: url('../../resource/images/icons1/08-chat.png');
+	}
+#idMsg.selected {
+	
+	/*  6. 그라데이션 추가  */
+	background-image: url('../../resource/images/icons1/08-chat.png'),
+	-webkit-gradient(
+		linear,
+		0% 0%,
+		0% 100%,
+		from(#76aec8),
+		to(#76aec8),
+		color-stop(.5,#ffffff)
+		);
+	}	
+	
+#idSrch{
+	background-image: url('../../resource/images/icons1/06-magnifying-glass.png');
+	}
+#idSrch.selected {
+	
+	/*  7. 그라데이션 추가 */	
+	background-image: url('../../resource/images/icons1/06-magnifying-glass.png'),
+	-webkit-gradient(
+		linear,
+		0% 0%,
+		0% 100%,
+		from(#76aec8),
+		to(#76aec8),
+		color-stop(.5,#ffffff)
+		);
+	}
+
+/*  리스트 <section>  */
 section#home ul.tweets li {
 	min-height: 52px;
+	}
+	
+section#home ul.tweets li:nth-child(odd){
+		background-image: -webkit-gradient(
+			linear,
+			 0% 0%,
+			 0% 100%,
+			 from(#bfebff),
+			 to(#e0f5ff),
+			 color-stop(.7,#e0f5ff)
+		);
 	}
 
 section#home ul.tweets li div {
