@@ -1,0 +1,37 @@
+/* CSS Document */
+@charset "utf-8";
+
+.head{
+		background-color: #473e37;
+		padding: 1em;
+	}
+.pg-main{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+.entries p.pcview_only{
+		display:none;
+	}
+.sidebar ul{ /* 맨 왼쪽에 장식용 바 그림 */
+		border-left-width:2px;
+		border-left-style:solid;
+		border-left-color:#ccc;
+	}
+.sidebar ul li{ /*  인라인 레벨로 바꾸고 오른쪽에 장식용 바 그림 */
+		display:inline;
+		border-right-width:2px;
+		border-right-style:solid;
+		border-right-color:#ccc;
+		padding-right:5px;
+		padding-left:5px;
+	}
+.foot{
+		background-color:#333;
+		border-top-width:1px;
+		border-top-style:solid;
+		border-top-color:#999;
+		padding:10px;
+		color:#fff;
+		margine-top:10px;
+		text-align:center;
+	}
