@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="kr">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>네비게이션 연습</title>
+
+    <!-- CND -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Jquery Mobile에서 추가한 클래스 에후에 아래 링크 적용될 수 있도록 이 위치에 있어야함.
+     "common.css 참고할 것 "-->
+    <link rel="stylesheet" href="common.css" type="text/css" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+
+</head>
+<body>
+
+    <div data-role="page" id="page">
+
+            <div data-role="header" data-position="fixed" data-fullscreen="true" data-theme="b">
+                <a data-icon="back" href="#">Back</a>
+                <a data-icon="home" data-iconpos="notext" href="#">홈</a>
+
+                <h1>Header 입니다.</h1>
+
+                <div data-role="navbar" >
+
+                    <ul>
+                        <li><a href="#" class="ui-btn-activ">상단1</a></li>
+                        <li><a href="#">상단2</a></li>
+                        <li><a href="#">상단3</a></li>
+                        <li><a href="#">상단4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+                <div data-rile="content">
+
+                    <img src="../resource/virtual_images/bg.png" alt=""/>
+
+                </div>
+
+                <div data-role="footer" data-position="fixed" data-theme="b">
+
+                        <div data-role="navbar">
+
+                            <ul>
+                                <li><a data-icon="gear" class="ui-btn-active" href="#">하단1</a></li>
+                                <li><a data-icon="grid" href="#">하단2</a></li>
+                                <li><a data-icon="search" href="#">하단3</a></li>
+                                <li><a data-icon="info" href="#">하단4</a></li>
+                            </ul>
+                        </div>
+                </div>
+
+
+    </div>
+</body>
+</html>

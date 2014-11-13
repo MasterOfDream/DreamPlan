@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 구글 CDN  https://developers.google.com/speed/libraries/devguide  -->
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+<title>sub Page</title>
+
+</head>
+
+<body>
+	
+    <div data-role="page" id="page">
+    
+    	<div data-role="header" data-theme="b">
+        	<h1>서브페이지</h1>
+        </div>
+        
+        <div data-role="content">
+        	<P>다양한 종류의 링크를 연결할 수 있습니다.</P>
+            <!-- data-transition="slide" 왼쪽에서 오른쪽으로 으로 넘어왔을 때 data-rel="back" 을 하면 반대로 움직임. -->
+            <a href="multi-page.html" data-role="button" data-direction="reverse" data-theme="b" data-rel="back" >돌아가기</a>
+        </div>
+        
+        <div data-role="footer" data-theme="b">
+        	<h4>Footer 입니다.</h4>
+        </div>
+        
+    </div>
+</body>
+</html>

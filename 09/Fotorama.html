@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Fotorama 4.6.2</title>
+
+    <!-- 공통 시작 (CND) -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <!-- Jquery Mobile에서 추가한 클래스 에후에 아래 링크 적용될 수 있도록 이 위치에 있어야함.
+         "common.css 참고할 것 "-->
+        <link rel="stylesheet" href="common.css" type="text/css" />
+        <link rel="stylesheet" href="index.css" type="text/css" />
+
+    <!-- 공통 끝 -->
+
+
+    <!-- 포토라마 파일 연결 -->
+    <link href="../resource/fotorama-4.6.2/fotorama.css" rel="styleSheet" />
+    <script src="../resource/fotorama-4.6.2/fotorama.js" ></script>
+
+    <style>
+
+        .fotorama__caption{
+            text-align:center;
+        }
+    </style>
+
+</head>
+<body>
+
+<div data-role="page" id="campus_images" class="gallery_page">
+
+    <div data-role="header" data-theme="b">
+        <h1>잡다한 이미지들</h1>
+    </div>
+
+    <div data-role="content">
+            <div class="fotorama" data-arrows="true" data-width="100%" data-ratio="965/643" data-allowfullscreen="true" data-nav="thumbs">
+
+
+            <img src="../resource/virtual_images/fotorama_images/1.jpg" data-caption="b" />
+            <img src="../resource/virtual_images/fotorama_images/2.jpg" data-caption="c" />
+            <img src="../resource/virtual_images/fotorama_images/3.jpg" data-caption="d" />
+            <img src="../resource/virtual_images/fotorama_images/4.jpg" data-caption="e" />
+            <img src="../resource/virtual_images/fotorama_images/5.jpg" data-caption="f" />
+            <img src="../resource/virtual_images/fotorama_images/6.jpg" data-caption="g" />
+            <img src="../resource/virtual_images/fotorama_images/7.jpg" data-caption="h" />
+            <img src="../resource/virtual_images/fotorama_images/8.jpg" data-caption="i" />
+            <img src="../resource/virtual_images/fotorama_images/9.jpg" data-caption="j" />
+
+                <a href="http://youtu.be/vDQkKJXZqj8">최고의 가치 비디오</a>
+
+            <img data-caption="A" src="../resource/virtual_images/gif/1.gif" />
+            <img data-caption="B" src="../resource/virtual_images/gif/2.gif" />
+            <img data-caption="C" src="../resource/virtual_images/gif/3.gif" />
+            <img data-caption="D" src="../resource/virtual_images/gif/4.gif" />
+            <img data-caption="E" src="../resource/virtual_images/gif/5.gif" />
+            <img data-caption="F" src="../resource/virtual_images/gif/6.gif" />
+            <img data-caption="G" src="../resource/virtual_images/gif/7.gif" />
+            <img data-caption="H" src="../resource/virtual_images/gif/8.gif" />
+            <img data-caption="I" src="../resource/virtual_images/gif/9.gif" />
+            <img data-caption="J" src="../resource/virtual_images/gif/10.gif" />
+
+            </div>
+    </div><!-- content 끝 --->
+
+    <div data-role="footer" data-theme="b">
+        <h2>Footer</h2>
+        <h1>버추렁대학교</h1>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+	<title>다양한 페이지 전환</title>
+
+</head>
+
+<body>
+
+	<div data-role="page" id="page">
+    		
+            <div data-role="header" data-theme="b">
+            	
+                <h1>장면 전환 효과입니다.</h1>
+            
+            </div>
+            
+            <div data-role="content">
+            
+            	<lu data-role="listview">
+                
+            		<li><a href="sub_t.html" data-transition="slide">slide 효과</a></li>
+            		<li><a href="sub_t.html" data-transition="slideup">slideup 효과</a></li>
+            		<li><a href="sub_t.html" data-transition="slidedown">slidedown 효과</a></li>
+            		<li><a href="sub_t.html" data-transition="pop">pop 효과</a></li>
+            		<li><a href="sub_t.html" data-transition="fade">fade 효과</a></li>
+                    
+                    <!--  안드로이드에선 3D 기능이 부족해서 잘 안되고있음  -->
+            		<li><a href="sub_t.html" data-transition="flip"> flip효과</a></li>
+                    
+                    <!--  안드로이드에선 3D 기능이 부족해서 잘 안되고있음  -->
+            		<li><a href="sub_t.html" data-transition="turn"> turn효과</a></li>
+                    
+                    <!--  안드로이드에선 3D 기능이 부족해서 잘 안되고있음  -->
+            		<li><a href="sub_t.html" data-transition="flow"> flow효과</a></li>
+            		           
+                    <!--  안드로이드에선 3D 기능이 부족해서 잘 안되고있음  -->
+            		<li><a href="sub_t.html" data-transition="slidefade"> slidefade 효과</a></li>
+                    
+            		<li><a href="sub_t.html" data-transition="none">none 효과</a></li>
+            	
+                </lu>
+                
+            </div>
+            
+            <div data-role="footer" data-theme="b">
+            	<h1>Footer 입니다.</h1>
+            </div>
+    </div>
+
+</body>
+</html>

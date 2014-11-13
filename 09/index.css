@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#logo {
+    width:176px;
+    height:132px;
+    text-indent:-999px;
+    background-image: url(../resource/virtual_Images/CI_TITLE.png);
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+
+.title_style {
+    color:#3f3c30;
+    padding-top: 10px;
+}
+
+
+/** fotorama 캡션 가운데 정렬 */
+.fotorama__caption{
+	text-align:center;
+}
