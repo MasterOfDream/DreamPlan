@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+	<meta name ="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <title>Media Query</title>
+    <style>
+	
+		/** 뷰포트를 설정하지 않으면 모두 테블릿 PC로 나옴. **/
+		
+        /* 스마트폰 */
+        @media (max-width:799px) {
+            body {background-color: #6750FF} /* 배경은 흰색 */
+            #title:after{content: ": 스마트폰";} /* 스마트폰 접속 표시 */
+			h1{color:#E0FF00;}
+        }
+            
+        /* 태블릿 PC */
+        @media only screen and (min-width:800px) and (max-width:1023px) {
+                
+            body {background-color: #CACACA; } /* 테블릿 피시 */
+            #title:after{ content: ": 테블릿 PC 연결"; } /* 테블릿 PC 접속시 표시 */
+        }
+        
+        /* 데스크탑 PC */
+        @media only screen and (min-width:1024px) {
+            body {background-color: #606060; }
+            #title:after{ content: ": 데스크탑 PC"; }
+			h1 {color:#ffffff;}
+        }	
+    </style>
+
+</head>
+
+
+<body>
+	<h1 id="title">접속기기</h1>
+
+</body>
+</html>

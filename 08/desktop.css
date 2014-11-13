@@ -1,0 +1,14 @@
+/* CSS Document */
+
+@charset "utf-8";
+
+body {
+		background-color: #fff;
+	}
+	
+#mobile_view {
+		
+		display: none; /* 모바일 화면 생략 */
+	
+	}
+
