@@ -1,0 +1,44 @@
+/* CSS Document */
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		@font-face {
+			font-family:NanumGothicFont;
+			src:url('../resource/NanumFont/NanumGothic.ttf');
+			font-weight:bold;
+			}
+		
+		p, ol, h1, h2 {
+			font-family: NanumGothicFont;
+				
+		}
+
+		.container{
+			width: 100%;
+		box-align: center;
+			border: 1px soild #c0c0c0;
+		}
+
+		.header, .footer{
+			background-color: #c0c0c0;
+			color: #fff;
+			padding: .5em;
+		}
+
+		.box_style{
+			float: left;
+			width: 190px;
+			margin: 0.5em;
+			padding: 1em;
+		}
+
+		.clear_style{
+			clear:left;
+			}
+
+		.footer p{
+			text-align: center;
+		}
+
