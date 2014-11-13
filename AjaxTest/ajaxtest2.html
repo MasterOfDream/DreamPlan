@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+    <meta http-equiv = "Content-Type" content="text/html" charset="UTF-8">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <title>Ajax Test</title>
+    <script type="text/javascript">
+        function loadMLDoc(){
+            var xmlhttp;
+            if(window.XMLHttpRequest){
+                xmlhttp = new XMLHttpRequest();
+            }
+            else{
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function(){
+                if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                    document.getElementById("info").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "info.txt", true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+<div id = "info">
+    <h2>AJAX를 받는 부분</h2>
+</div>
+<button type="button" onclick="loadMLDoc()" >AJAX 호출</button>
+</body>
+</html>
+
+(info.txt)
+<h3>이것은 AJAX의 내용 입니다.</h3>
