@@ -19,7 +19,56 @@
 }
 
 
-/** fotorama 캡션 가운데 정렬 */
+/*******************************************
+*                                          *
+* fotorama 캡션 가운데 정렬 ****************
+*                                          *
+*******************************************/
 .fotorama__caption{
 	text-align:center;
+}
+
+/*******************************************
+*                                          *
+* 대학소개 페이지 id="Introduction" 설정   *
+*                                          *
+*******************************************/
+/* 학교소개 제목라인 **/
+#title{
+    color:#000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* 학교소개의 이미지 */
+#pic_univ {
+
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s; /* 사파리 크롬 */
+    -moz-transition: width 0.5s;    /* 파이어 폭스 */
+    -o-transition: 0.5s;            /* 오페라      */
+}
+
+
+.small {
+    width:30%;
+}
+
+
+.large {
+    width:100%;
+}
+
+.clear_both {
+    clear:both;
+}
+
+.bold_style {
+    font-weight:bold;
+    color:#950000;
 }
