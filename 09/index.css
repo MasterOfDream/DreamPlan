@@ -28,6 +28,14 @@
 	text-align:center;
 }
 
+.img_src {
+
+	content:url("../resource/virtual_images/fotorama_images/1.jpg");
+}
+
+		
+
+
 /*******************************************
 *                                          *
 * 대학소개 페이지 id="Introduction" 설정   *
@@ -71,4 +79,19 @@
 .bold_style {
     font-weight:bold;
     color:#950000;
+}
+
+/*******************************************
+*                                          *
+* 홍보 동영상 페이지 id="Introduction" 설정   *
+*                                          *
+*******************************************/
+
+#videoClip {
+	
+	width:100%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;	
 }
