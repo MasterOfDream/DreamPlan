@@ -51,17 +51,19 @@
 	-webkit-transition: width 0.5s; /* 사파리 크롬 */
 	-moz-transition: width 0.5s;    /* 파이어 폭스 */
 	-o-transition: 0.5s;            /* 오페라      */
-	border-radius: 60px 0px 60px 60px;
+
 }
 
 
 .small {
     width:30%;
+    border-radius: 60px 0px 60px 60px;
 }
 
 
 .large {
     width:100%;
+    border-radius: 60px 0px 60px 0px;
 }
 
 .clear_both {
