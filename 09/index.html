@@ -183,15 +183,27 @@
     </div>
     
     <!-- 컨텐트 -->
-    <div data-role="content">
-    	<video  id="videoClip" controls >
-        
-        	<source src="../resource/vortex.mp4" type="video/mp4" />
-        	<source src="../resource/vortex.ogv" type="video/ogv" />
-        	<source src="../resource/vortex.webm" type="video/webm" />
+    <div data-role="content" data-theme="c" class="content_style" >
+    	<div id="video_canvas">
+        	<div>
+                <video  id="videoClip" rel="external" class="video-js vjs-default-skin"  controls preload="auto" data-setup="{}" >
+                    <source src="../resource/Vortex.mp4"  type="video/mp4"  />
+                    <source src="../resource/Vortex.webm" type="video/webm" />
+                    <source src="../resource/Vortex.ogv"  type="video/ogg"  />      
+                </video>
+                
+                <!-- 브라우저가 지원안할 경우 -->
+                <p class="vjs-no-video">
+                    <strong>비디오 다운 로드:</strong>
                     
-        </video>
-    </div>
+                    <a href="../resource/Vortex.mp4" target="_blank">mp4</a>,
+                    <a href="../resource/Vortex.ogv" target="_blank">Ogg</a>,
+                    <a href="../resource/Vortex.webm" target="_blank">webM</a>
+                    <br>
+                </p>
+            </div>
+        </div><!-- video_canvas end -->
+    </div><!-- content end -->
 	
     
     <!-- 푸터 -->
