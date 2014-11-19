@@ -15,7 +15,7 @@
     <!-- 외부 소스 연결 -- 포토라마 파일 연결 -->
 	<link href="../resource/fotorama-4.6.2/fotorama.css" rel="styleSheet" />
 	<script src="../resource/fotorama-4.6.2/fotorama.js" ></script>
-    <script src="small_large.js"></script>
+    <!--script src="small_large.js"></script-->
 
     <!-- jQuery-UI-Map을 사용하기위한 태그 -->
     <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
@@ -32,14 +32,11 @@
 
 <!----------------------------------------------------------------------------- main 페이지 -->
 <div data-role="page" id="main">
-
     	
         <!-- main Header -->
     	<div data-role="header" data-theme="b">
         	<h2 id="logo">가상대학교</h2>
     	</div>
-        
-        
 
 		 <!-- main Content -->
     	<div data-role="content">    
@@ -47,7 +44,7 @@
                 <li>
                     <a href="#campus_images">
                     <img class="ui-li-thumb/" src="../resource/virtual_images/pic_i.png" />
-                    <h3 class="title_style">캠퍼스 이미지</h3></a>
+                    <h3 class="title_style">캠퍼스 IMAGE</h3></a>
                 </li>
     
                 <li><a href="#Introduction">
@@ -59,8 +56,8 @@
                     <img class="ui-li-thumb/" src="../resource/virtual_images/movie_i.png" />
                     <h3 class="title_style">홍보 동영상</h3></a>
                 </li>
-    
-                <li><a href="map2.html"  rel="external">
+
+                <li><a href="#map_page">
                     <img class="ui-li-thumb/" src="../resource/virtual_images/map_i.png" />
                     <h3 class="title_style">캠퍼스 맵</h3></a>
                 </li>
@@ -76,7 +73,6 @@
 
 </div>
 <!-- main page 끝  -->
-
 
 
 <!-------------------------------------------------------------- campus_images 페이지  시작 -->
@@ -214,13 +210,11 @@
 <!------------------------------------------------------------------------- 지도 페이지 시작 -->
 <div data-role="page" id="map_page" data-fullscreen="true" class="map_style">
 
-
     <!-- Header -->
     <div data-role="header" data-position="fixed" data-theme="b">
         <a href="#main" data-icon="home" data-direction="reverse" class="ui-btn-left">Home</a>
         <h1>캠퍼스 맵</h1>
     </div>
-
 
     <!-- Content -->
     <div data-role="content" class="map_style">
