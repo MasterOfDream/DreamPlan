@@ -2,17 +2,17 @@
 <html>
 <head>
 
-    <title>LAST 버추얼대학교</title>
+    <title>버추얼 대학교</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<!-- jquery CDN 설정 -->
+	<!-- jquery CDN -->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    <!-- 외부 소스 연결 -- 포토라마 파일 연결 -->
+    <!-- 외부 소스 -->
 	<link href="../resource/fotorama-4.6.2/fotorama.css" rel="styleSheet" />
 	<script src="../resource/fotorama-4.6.2/fotorama.js" ></script>
 
@@ -20,46 +20,44 @@
 
 
 
-    <!-- Jquery Mobile에서 추가한 클래스 에후에 아래 링크 적용될 수 있도록 이 위치에 있어야함.
-  -- common.css 는 공통 적용 CSS -- index.css 참고할 각 페이지별 설정 적용  -->
+    <!-- Jquery Mobile 에서 추가한 클래스 이후에 아래 링크의 CSS가 적용 될 수 있도록 이 위치에 있어야 함
+    common.css 공통 적용 / CSS  index.css 각 페이지별 설정내용 있음.-->
     <link rel="stylesheet" href="common.css" type="text/css" />
     <link rel="stylesheet" href="index.css" type="text/css" />
 
 
 </head><body>
 
-<!----------------------------------------------------------------------------- main 페이지 -->
+<!-- Main Page-->
 <div data-role="page" id="main">
-    	
+
         <!-- main Header -->
     	<div data-role="header" data-theme="b">
-        	<h2 id="logo">가상대학교</h2>
+        	<h2 id="logo">버추얼 대학교</h2>
     	</div>
 
 		 <!-- main Content -->
-    	<div data-role="content">    
+    	<div data-role="content">
             <ul data-role="listview" data-insert="true">
                 <li>
                     <a href="#campus_images">
                     <img class="ui-li-thumb/" src="../resource/virtual_images/pic_i.png" />
-                    <h3 class="title_style">캠퍼스 IMAGE</h3></a>
-                </li>
-    
-                <li><a href="#Introduction">
-                    <img class="ui-li-thumb/" src="../resource/virtual_images/intro_i.png" />
-                    <h3 class="title_style">대학교 소개</h3></a>
-                </li>
-    
-                <li><a href="#video_value">
-                    <img class="ui-li-thumb/" src="../resource/virtual_images/movie_i.png" />
-                    <h3 class="title_style">홍보 동영상</h3></a>
+                    <h3 class="title_style">Variety IMAGE</h3></a>
                 </li>
 
-                <li><a href="map2.html" rel="external"><!-- rel="external 로 설정해서 페이지
-                 이동할 때 jQuery Mobile을 한번 초기화 해줘서 정상적 으로 이동 되게 함.
-                 페이지간 이동 할 경우 jQuery가 서로 엉키지 않도록 이동간에 초기화 해줌 -->
+                <li><a href="#Introduction">
+                    <img class="ui-li-thumb/" src="../resource/virtual_images/intro_i.png" />
+                    <h3 class="title_style">Indtroduction</h3></a>
+                </li>
+
+                <li><a href="#video_value">
+                    <img class="ui-li-thumb/" src="../resource/virtual_images/movie_i.png" />
+                    <h3 class="title_style">Information video</h3></a>
+                </li>
+
+                <li><a href="map2.html" rel="external"><!-- rel="external"은 다른 페이지로 이동할 때 jQuery Mobile을 초기화 해 줌으로써 jQuery 페이지간 서로 엉키지 않도록 해줌.-->
                     <img class="ui-li-thumb/" src="../resource/virtual_images/map_i.png" />
-                    <h3 class="title_style">캠퍼스 맵</h3></a>
+                    <h3 class="title_style">MAP</h3></a>
                 </li>
             </ul>
     	</div><!-- content end -->
@@ -70,21 +68,21 @@
         </div>
 
 </div>
-<!-- main page 끝  -->
+<!-- main-page end -->
 
 
-<!-------------------------------------------------------------- campus_images 페이지  시작 -->
+<!-- campus_images page -->
 <div data-role="page" id="campus_images" class="gallery_page">
-    
+
         <!-- Header -->
         <div data-role="header" data-theme="b">
             <a href="#main" data-icon="home" data-direction="reverse" class="ui-btn-left">home</a>
-            <h1>잡다한 이미지들</h1>
+            <h1></h1>
         </div>
-    
+
     	<!-- Content -->
-        <div data-role="content">   	
-        <!-- fotorama 외부 소스 설정 -->
+        <div data-role="content">
+        <!-- fotorama -->
         <div class="fotorama" data-arrows="true" data-width="100%" data-ratio="965/643" data-allowfullscreen="true" data-nav="thumbs">
             <img data-caption="a" src="../resource/virtual_images/gif/0.gif" />
             <img class="img_src" src="1.jpg" data-caption="b" />
@@ -107,86 +105,83 @@
             <img data-caption="I" src="../resource/virtual_images/gif/9.gif" />
             <img data-caption="J" src="../resource/virtual_images/gif/10.gif" />
             <img data-caption="J" src="../resource/virtual_images/gif/11.gif" />
-            <a href="http://youtu.be/b4LzhlDcB-U" data-caption="태양계 보텍스 운동">태양계 보텍스 운동</a>
+            <a href="http://youtu.be/b4LzhlDcB-U" data-caption="VORTEX">Solasystem Vortex Motion</a>
         </div>
-            
+
         </div>
-    
+
     	<!-- Footer -->
         <div data-role="footer" data-theme="b">
-            <h1>버추얼대학교</h1>
+            <h1>버추얼 대학교</h1>
         </div>
-    
+
 </div>
-<!-- campus images 페이지 끝 -->
+<!-- campus images end -->
 
 
 
-<!---------------------------------------------------- Introduction 대학교 소개 페이지 시작  -->
+<!-- Introduction page -->
 <div data-role="page" id="Introduction">
 
     <!-- Header -->
     <div data-role="header" data-theme="b">
        <a href="#main" data-icon="home" data-direction="reverse" class="ui-btn-left">Home</a>
-       <h1>대학교 소개</h1>
+       <h1>버추얼대학교 소개</h1>
     </div>
-    
+
     <!-- Content -->
     <div data-role="content" data-theme="c">
         <img class="small" id="pic_univ" src="../resource/virtual_images/introduction.jpg" alt=""/>
         <h1 id="title">
-        	<strong class="bold_style">시대정신</strong>을 선도하는 열린 <strong class="bold_style">학문 공동체</strong> 입니다.
+        	<strong class="bold_style">시대정신</strong>을 선도하는 열린<strong class="bold_style">학문 공동체</strong>입니다.
         </h1>
-        
+
         <!-- 아래 "clear_both" 는 사진에는 float가 지정되므로 나머지 글과 제목 들이 함께 끌려 올라간다.
         이때 글은 끌려 올라가지 않고 원래 위치에 표시도록 구분하기 위해 clear가 선언된
         clear_both 클래스 선택자를 빈 div 엘리먼트에 이용한다.-->
         <div class="clear_both"></div>
-        
+
         <p>안녕하십니까? 버추얼 대학교에 관심을 가져 주셔서 감사합니다. 버추얼 대학교는 1세기 역사를 지니며 그 동안 많은 발전을 거듭 하였습니다.</p>
-        
         <p>버추얼 대학교는 세계에서 가장 선도적인 대학교 중의 하나로 인정받고 있습니다. 설립 목적은 사회와 개인에 직접적인 기여와 성공을 준비할 수 있도록 하는 것입니다. 궁극적으로는 인류 뮨명에 유용한 인재를 양성하는 것입니다. 오늘날 버추얼 대학교는 현재 인류가 당면하고 있는 여러 문제를 해결하고 다음 세대를 선도할 수 있는 리더가 될 수 있도록 학생들을 준비 시키는 것입니다.</p>
-        
         <p>여러분의 미래를 버추얼 대학교에서 함께하시길 희망합니다.</p>
-        
         <p>총장 Master Of Dream</p>
-    
+
     </div><!-- content end -->
-    
-    
+
+
     <!-- Footer -->
-    
+
         <div data-role="footer" data-theme="b">
             <h3>버추얼 대학교</h3>
         </div>
 
 </div>
-<!-- Introduction 대학교 소개 페이지 끝  -->
+<!-- Introduction end -->
 
 
-<!------------------------------------------------------------------- 홍보 동영상 페이지 시작 -->
+<!--- VIDEO -->
 <div data-role="page" id="video_value" >
-	
-    <!-- 헤더 -->
+
+    <!-- Header -->
     <div data-role="header" data-theme="b">
     <a href="#main" data-icon="home" data-direction="reverse" class="ui-btn-left">Home</a>
-      <h1>동영상</h1>
+      <h1>Video</h1>
     </div>
-    
-    <!-- 컨텐트 -->
+
+    <!-- contentƮ -->
     <div data-role="content" data-theme="c" class="content_style" >
     	<div id="video_canvas">
         	<div>
                 <video  id="videoClip" rel="external" class="video-js vjs-default-skin"  controls preload="auto" data-setup="{}" >
                     <source src="../resource/Vortex.mp4"  type="video/mp4"  />
                     <source src="../resource/Vortex.webm" type="video/webm" />
-                    <source src="../resource/Vortex.ogv"  type="video/ogg"  />      
+                    <source src="../resource/Vortex.ogv"  type="video/ogg"  />
                 </video>
-                
-                <!-- 브라우저가 지원안할 경우 -->
+
+                <!-- 브라우저가 지원하지 않을 경우  -->
                 <p class="vjs-no-video">
-                    <strong>비디오 다운 로드:</strong>
-                    
+                    <strong>Video_Dowwnliad</strong>
+
                     <a href="../resource/Vortex.mp4" target="_blank">mp4</a>,
                     <a href="../resource/Vortex.ogv" target="_blank">Ogg</a>,
                     <a href="../resource/Vortex.webm" target="_blank">webM</a>
@@ -195,13 +190,13 @@
             </div>
         </div><!-- video_canvas end -->
     </div><!-- content end -->
-	
-    
-    <!-- 푸터 -->
+
+
+    <!-- Footer -->
     <div data-role="footer" data-theme="b">
     	<h3>FOOTER</h3>
     </div>
-    
+
 </div>
-<!-- 홍보 동영상 페이지 끝 -->
+<!-- Video_page_end -->
 
