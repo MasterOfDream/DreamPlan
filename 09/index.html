@@ -7,6 +7,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+    <!-- 아이폰용 아이콘 설정-->
+    <link rel="apple-touch-icon" href="../resource/virtual_images/Card-icon.png">
+    <!-- 안드로이드용 아이콘 설정-->
+    <link rel="shortcut icon" sizee="196x196" href="../resource/virtual_images/Card-icon.png">
+
+
 	<!-- jquery CDN -->
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -31,41 +37,42 @@
 <!-- Main Page-->
 <div data-role="page" id="main">
 
-        <!-- main Header -->
-    	<div data-role="header" data-theme="b">
-        	<h2 id="logo">버추얼 대학교</h2>
-    	</div>
+    <!-- main Header -->
+	<div data-role="header" data-theme="b">
+    	<h2 id="logo">버추얼 대학교</h2>
+	</div>
 
-		 <!-- main Content -->
-    	<div data-role="content">
-            <ul data-role="listview" data-insert="true">
-                <li>
-                    <a href="#campus_images">
-                    <img class="ui-li-thumb/" src="../resource/virtual_images/pic_i.png" />
-                    <h3 class="title_style">Variety IMAGE</h3></a>
-                </li>
+	 <!-- main Content -->
+	<div data-role="content">
+        <ul data-role="listview" data-insert="true">
+            <li>
+                <a href="#campus_images">
+                <img class="ui-li-thumb/" src="../resource/virtual_images/pic_i.png" />
+                <h3 class="title_style">Variety IMAGE</h3></a>
+            </li>
 
-                <li><a href="#Introduction">
-                    <img class="ui-li-thumb/" src="../resource/virtual_images/intro_i.png" />
-                    <h3 class="title_style">Indtroduction</h3></a>
-                </li>
+            <li><a href="#Introduction">
+                <img class="ui-li-thumb/" src="../resource/virtual_images/intro_i.png" />
+                <h3 class="title_style">Indtroduction</h3></a>
+            </li>
 
-                <li><a href="#video_value">
-                    <img class="ui-li-thumb/" src="../resource/virtual_images/movie_i.png" />
-                    <h3 class="title_style">Information video</h3></a>
-                </li>
+            <li><a href="#video_value">
+                <img class="ui-li-thumb/" src="../resource/virtual_images/movie_i.png" />
+                <h3 class="title_style">Information video</h3></a>
+            </li>
 
-                <li><a href="map2.html" rel="external"><!-- rel="external"은 다른 페이지로 이동할 때 jQuery Mobile을 초기화 해 줌으로써 jQuery 페이지간 서로 엉키지 않도록 해줌.-->
-                    <img class="ui-li-thumb/" src="../resource/virtual_images/map_i.png" />
-                    <h3 class="title_style">MAP</h3></a>
-                </li>
-            </ul>
-    	</div><!-- content end -->
+            <!-- rel="external"은 다른 페이지로 이동할 때 jQuery Mobile을 초기화 해 줌으로써 jQuery 페이지간 서로 엉키지 않도록 해줌.-->
+            <li><a href="map2.html" rel="external">
+                <img class="ui-li-thumb/" src="../resource/virtual_images/map_i.png" />
+                <h3 class="title_style">MAP</h3></a>
+            </li>
+        </ul>
+	</div><!-- content end -->
 
-         <!-- main Footer -->
-        <div data-role="footer" data-theme="b">
-            <h1>Footer</h1>
-        </div>
+     <!-- main Footer -->
+    <div data-role="footer" data-theme="b">
+        <h1>Footer</h1>
+    </div>
 
 </div>
 <!-- main-page end -->
@@ -84,28 +91,28 @@
         <div data-role="content">
         <!-- fotorama -->
         <div class="fotorama" data-arrows="true" data-width="100%" data-ratio="965/643" data-allowfullscreen="true" data-nav="thumbs">
-            <img data-caption="a" src="../resource/virtual_images/gif/0.gif" />
-            <img class="img_src" src="1.jpg" data-caption="b" />
-            <img src="../resource/virtual_images/fotorama_images/2.jpg" data-caption="c" />
-            <img src="../resource/virtual_images/fotorama_images/3.jpg" data-caption="d" />
-            <img src="../resource/virtual_images/fotorama_images/4.jpg" data-caption="e" />
-            <img src="../resource/virtual_images/fotorama_images/5.jpg" data-caption="f" />
-            <img src="../resource/virtual_images/fotorama_images/6.jpg" data-caption="g" />
-            <img src="../resource/virtual_images/fotorama_images/7.jpg" data-caption="h" />
-            <img src="../resource/virtual_images/fotorama_images/8.jpg" data-caption="i" />
-            <img src="../resource/virtual_images/fotorama_images/9.jpg" data-caption="j" />
-            <img data-caption="A" src="../resource/virtual_images/gif/1.gif" />
-            <img data-caption="B" src="../resource/virtual_images/gif/2.gif" />
-            <img data-caption="C" src="../resource/virtual_images/gif/3.gif" />
-            <img data-caption="D" src="../resource/virtual_images/gif/4.gif" />
-            <img data-caption="E" src="../resource/virtual_images/gif/5.gif" />
-            <img data-caption="F" src="../resource/virtual_images/gif/6.gif" />
-            <img data-caption="G" src="../resource/virtual_images/gif/7.gif" />
-            <img data-caption="H" src="../resource/virtual_images/gif/8.gif" />
-            <img data-caption="I" src="../resource/virtual_images/gif/9.gif" />
-            <img data-caption="J" src="../resource/virtual_images/gif/10.gif" />
-            <img data-caption="J" src="../resource/virtual_images/gif/11.gif" />
-            <a href="http://youtu.be/b4LzhlDcB-U" data-caption="VORTEX">Solasystem Vortex Motion</a>
+        <img data-caption="a" src="../resource/virtual_images/gif/0.gif" />
+        <img class="img_src" src="1.jpg" data-caption="b" />
+        <img src="../resource/virtual_images/fotorama_images/2.jpg" data-caption="c" />
+        <img src="../resource/virtual_images/fotorama_images/3.jpg" data-caption="d" />
+        <img src="../resource/virtual_images/fotorama_images/4.jpg" data-caption="e" />
+        <img src="../resource/virtual_images/fotorama_images/5.jpg" data-caption="f" />
+        <img src="../resource/virtual_images/fotorama_images/6.jpg" data-caption="g" />
+        <img src="../resource/virtual_images/fotorama_images/7.jpg" data-caption="h" />
+        <img src="../resource/virtual_images/fotorama_images/8.jpg" data-caption="i" />
+        <img src="../resource/virtual_images/fotorama_images/9.jpg" data-caption="j" />
+        <img data-caption="A" src="../resource/virtual_images/gif/1.gif" />
+        <img data-caption="B" src="../resource/virtual_images/gif/2.gif" />
+        <img data-caption="C" src="../resource/virtual_images/gif/3.gif" />
+        <img data-caption="D" src="../resource/virtual_images/gif/4.gif" />
+        <img data-caption="E" src="../resource/virtual_images/gif/5.gif" />
+        <img data-caption="F" src="../resource/virtual_images/gif/6.gif" />
+        <img data-caption="G" src="../resource/virtual_images/gif/7.gif" />
+        <img data-caption="H" src="../resource/virtual_images/gif/8.gif" />
+        <img data-caption="I" src="../resource/virtual_images/gif/9.gif" />
+        <img data-caption="J" src="../resource/virtual_images/gif/10.gif" />
+        <img data-caption="J" src="../resource/virtual_images/gif/11.gif" />
+        <a href="http://youtu.be/b4LzhlDcB-U" data-caption="VORTEX">Solasystem Vortex Motion</a>
         </div>
 
         </div>
@@ -117,8 +124,6 @@
 
 </div>
 <!-- campus images end -->
-
-
 
 <!-- Introduction page -->
 <div data-role="page" id="Introduction">
@@ -168,7 +173,7 @@
       <h1>Video</h1>
     </div>
 
-    <!-- contentƮ -->
+    <!-- content -->
     <div data-role="content" data-theme="c" class="content_style" >
     	<div id="video_canvas">
         	<div>
@@ -197,6 +202,8 @@
     	<h3>FOOTER</h3>
     </div>
 
+
 </div>
 <!-- Video_page_end -->
 
+</body></html>
